@@ -8,7 +8,7 @@
 	--primary-color: #f44336;
 	--secondary-color: pink;
 	--tertiary-color:black;
-	--primary-background-image: url('../img/2.gif');
+	--primary-background-image: url(2.gif);
 	--tertiary-background: pink;
 	--quaternary-color: black;
 	--secondary-background-image: url(none);
@@ -665,7 +665,7 @@ ul{
 .abt{
 	height: 50vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../img/2.gif');
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(2.gif);
 	background-position: center;
 	background-size: cover;
 	text-align: center;

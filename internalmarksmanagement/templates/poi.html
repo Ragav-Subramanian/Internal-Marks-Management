@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		{% load static %}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>INTERNAL MARKS ENTRY PORTAL</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
@@ -16,22 +15,22 @@
 	<body>
 		<section class="mass">
 			<nav>
-				<a href="index.html"><img src="{% static 'img/logo1.png' %}"></a>
+				<a href="index.html"><img src="css/logo1.png"></a>
 				<div class="nav-links" id="navLinks">
 					<i class="fa fa-times" onclick="hideMenu()"></i>
 					<ul>
 						<li><a href="index.html">HOME</a></li>
-						<li><a href="teacher-space.html">Back</a></li>
+						<li><a href="teacher space.html">Back</a></li>
 						<li><a href="login.html">Sign out</a></li>
 					</ul>
-					<img src="{% static 'img/moon.png' %}" id="icon">
+					<img src="css/moon.png" id="icon">
 				</div>
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
 			<div class="container">
 				<div class="card">
 					<div class="imgBx">
-						<a href="semres.html"><img src="{% static 'img/se.png' %}"></a>
+						<a href="sem res.html"><img src="css/se.png"></a>
 					</div>
 					<div class="content">
 						<ul>
@@ -56,7 +55,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se2.png' %}">
+						<img src="css/se2.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -71,7 +70,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se3.png' %}">
+						<img src="css/se3.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -86,7 +85,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se4.png' %}">
+						<img src="css/se4.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -101,7 +100,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se5.png' %}">
+						<img src="css/se5.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -116,7 +115,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se6.png' %}">
+						<img src="css/se6.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -131,7 +130,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se7.png' %}">
+						<img src="css/se7.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -146,7 +145,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/se8.png' %}">
+						<img src="css/se8.png">
 					</div>
 					<div class="content">
 						<ul>
@@ -161,7 +160,7 @@
 				</div>
 				<div class="card">
 					<div class="imgBx">
-						<img src="{% static 'img/logo1.png' %}">
+						<img src="css/logo1.png">
 					</div>
 					<div class="content">
 						<p class="p1"><strong>This is the semester marks form 1 to 8th semester. we displayed above.<br> Thank you</strong></p>
@@ -186,9 +185,9 @@
 			icon.onclick= function(){
 				document.body.classList.toggle("dark-theme");
 				if(document.body.classList.contains("dark-theme")){
-					icon.src = "{% static 'img/sun.png' %}";
+					icon.src = "css/sun.png";
 				}else{
-					icon.src = "{% static 'img/moon.png' %}";
+					icon.src = "css/moon.png";
 				}
 			}
 		</script>
