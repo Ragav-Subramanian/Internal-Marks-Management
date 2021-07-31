@@ -9,9 +9,10 @@ class PersonalizedLoginBackend(ModelBackend):
         # Checking it matches. This is an example:
         try:
             user = User.objects.get(email=email)
+            print(user.password,password,email,request.POST)
         except User.DoesNotExist:
             return None
-        if user.verifyPassword(password):
+        if user.password==password:
             return user
         else:
             return None

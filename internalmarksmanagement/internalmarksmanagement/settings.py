@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'users',
+    'marks',
 ]
 
 MIDDLEWARE = [
@@ -77,13 +78,10 @@ WSGI_APPLICATION = 'internalmarksmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'InternalMarksManagement',
-        'USER':'postgres',
-        'PASSWORD':'password',
-        'HOST':'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'coffee.sqlite3'),
     }
-}
+  }
 
 
 # Password validation

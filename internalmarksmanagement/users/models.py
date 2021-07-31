@@ -19,9 +19,6 @@ class User(models.Model):
     registerNumber = models.CharField(max_length=25)
     date_joined = models.DateTimeField(default=timezone.now)
     last_login = models.DateTimeField(default=timezone.now)
-
-    def verifyPassword(self,raw_password):
-        return pbkdf2_sha256.verify(raw_password,self.password)
     
     @property
     def is_authenticated(self):
